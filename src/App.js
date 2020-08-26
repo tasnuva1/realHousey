@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
+import ScrollIntoView from "./Components/ScrollIntoView";
+
 import Home from "./Pages/Home/Home";
 import "./App.scss";
 import NavBar from "./Components/Nav/NavBar";
@@ -15,17 +17,19 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route exact path="/houses" component={Houses} />
-          <Route exact path="/sell" component={Sell} />
-          <Route exact path="/homeloans" component={HomeLoads} />
-          <Route exact path="/agentfinder" component={AgentFinder} />
-          <Route exact path="/houses/:slug" component={SingleHouse} />
+        <ScrollIntoView>
+          <NavBar />
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route exact path="/houses" component={Houses} />
+            <Route exact path="/sell" component={Sell} />
+            <Route exact path="/homeloans" component={HomeLoads} />
+            <Route exact path="/agentfinder" component={AgentFinder} />
+            <Route exact path="/houses/:slug" component={SingleHouse} />
 
-          <Route exact component={Error} />
-        </Switch>
+            <Route exact component={Error} />
+          </Switch>
+        </ScrollIntoView>
       </div>
     );
   }

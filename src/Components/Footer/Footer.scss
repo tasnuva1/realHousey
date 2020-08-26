@@ -1,3 +1,9 @@
+.footer-whole-container {
+  position: relative;
+  margin-top: -27rem;
+  clear: both;
+}
+
 .footer-container {
   width: 100%;
   background: #266cf6;
@@ -16,6 +22,10 @@
     display: flex;
     color: white;
     justify-content: space-between;
+
+    .link-pointer {
+      cursor: pointer;
+    }
 
     .footer-main-link {
       flex-basis: 10%;
@@ -110,6 +120,7 @@
     display: flex;
     justify-content: center;
     border-top: 1px solid rgba(255, 255, 255, 0.411);
+    background: #266cf6;
     padding: 2rem 0rem 2rem 0rem;
     color: white;
   }
@@ -157,23 +168,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .footer-container {
-    margin-top: 18rem;
-  }
-}
-
-@media screen and (max-width: 265px) {
-  .footer-container {
-    margin-top: 28rem;
-  }
-}
-
-@media screen and (max-width: 184px) {
-  .footer-container {
-    margin-top: 38rem;
   }
 }

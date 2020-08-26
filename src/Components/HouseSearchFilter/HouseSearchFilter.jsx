@@ -63,7 +63,7 @@ const HouseSearchFilter = ({ houses }) => {
   });
 
   let tol = getUnique(houses, "baths");
-  // tol = ["all", ...tol];
+
   tol = tol.map((item, index) => {
     return (
       <option value={item} key={index}>
@@ -74,11 +74,9 @@ const HouseSearchFilter = ({ houses }) => {
 
   return (
     <section>
-      {/* <Heading>Search Houses</Heading> */}
       <Content heading1="Search" heading2="Search Houses" mTop="yes" />
       <form action="" className="search-box">
         <div action="" className="search-box-inner">
-          {/* select type */}
           <div className="house-search-filter-container">
             <label htmlFor="type">House Type</label>
             <div className="select">
@@ -92,8 +90,6 @@ const HouseSearchFilter = ({ houses }) => {
               </select>
             </div>
           </div>
-          {/* end select type */}
-          {/* select usState */}
           <div className="house-search-filter-container">
             <label htmlFor="usState">House State</label>
             <div className="select">
@@ -107,8 +103,6 @@ const HouseSearchFilter = ({ houses }) => {
               </select>
             </div>
           </div>
-          {/* end select usState */}
-          {/* select beds */}
           <div className="house-search-filter-container">
             <label htmlFor="beds">House Beds</label>
             <div className="select">
@@ -122,8 +116,6 @@ const HouseSearchFilter = ({ houses }) => {
               </select>
             </div>
           </div>
-          {/* end select beds */}
-          {/* select beds */}
           <div className="house-search-filter-container">
             <label htmlFor="baths">House Baths</label>
             <div className="select">
@@ -137,11 +129,8 @@ const HouseSearchFilter = ({ houses }) => {
               </select>
             </div>
           </div>
-          {/* end select beds */}
-          {/* select priceNum */}
           <div className="house-search-filter-container">
             <label htmlFor="priceNum">House Price ${priceNum}</label>
-            {/* <div className="select"> */}
             <input
               type="range"
               name="priceNum"
@@ -152,10 +141,8 @@ const HouseSearchFilter = ({ houses }) => {
               onChange={handleChange}
               className="slider-range"
             />
-            {/* </div> */}
           </div>
-          {/* end select priceNum */}
-          {/* SqftNum */}
+
           <div className="house-search-filter-container">
             <label htmlFor="SqftNum">House Sqft</label>
             <div className="">
@@ -177,12 +164,6 @@ const HouseSearchFilter = ({ houses }) => {
               />
             </div>
           </div>
-          {/* end SqftNum */}
-          {/*ChackBox */}
-          {/* <div className="">
-          <input type="chackbox" name="breakfast" id="breack" />
-        </div> */}
-          {/* end ChackBox */}
         </div>
       </form>
     </section>

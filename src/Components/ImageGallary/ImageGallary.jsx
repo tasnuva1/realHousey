@@ -5,8 +5,10 @@ import "./ImageGallary.scss";
 import SimpleImageSlider from "react-simple-image-slider";
 import icon from "../../External/icons/close.svg";
 
-const ImageGallary = ({ mainImage, img1, img2, img3, img4 }) => {
+const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
   const [openGallary, setopenGallary] = useState(false);
+
+  const { imagesURLs } = house;
 
   const isTablet = useMediaQuery({ query: "(max-width: 794px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 424px)" });
@@ -26,28 +28,6 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4 }) => {
   } else {
     width = "180rem";
   }
-
-  const images = [
-    {
-      url:
-        "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    },
-    {
-      url:
-        "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    },
-    {
-      url:
-        "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    },
-    {
-      url:
-        "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-    },
-    // { url: "./images/qu1.jpg" },
-    // { url: "./images/qu1.jpg" },
-    // { url: "./images/qu1.jpg" },
-  ];
 
   const SmallBox = {
     display: "flex",
@@ -91,7 +71,7 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4 }) => {
                   (isTabletOrMobile ? "50rem" : "70rem")
                 }
                 slideDuration={1.2}
-                images={images}
+                images={imagesURLs}
               />
             ) : (
               <SimpleImageSlider
@@ -104,7 +84,7 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4 }) => {
                   (isTabletOrMobile ? "50rem" : "70rem")
                 }
                 slideDuration={1.2}
-                images={images}
+                images={imagesURLs}
               />
             )}
             <img

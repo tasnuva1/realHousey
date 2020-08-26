@@ -8,8 +8,6 @@ const Loading = () => {
       <div className="loader-heading">
         <Heading heading="heading3">Houses Data Is Loading...</Heading>
       </div>
-
-      {/* <!-- Loading square for squar.red network --> */}
       <span className="loader">
         <span className="loader-inner"></span>
       </span>

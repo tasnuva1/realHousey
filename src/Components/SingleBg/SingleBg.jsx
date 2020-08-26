@@ -15,8 +15,8 @@ import img5 from "../../External/house-images/house5.jpg";
 import ParallaxCard from "../ParallaxCard/ParallaxCard";
 
 const SingleBg = ({ img, house }) => {
-  const { name, haffStartAddress, haffEndAddress, images } = house;
-  // console.log(house);
+  const { name, haffStartAddress, haffEndAddress, images, imagesURLs } = house;
+  console.log(imagesURLs);
   return (
     <div className="nav-background-color-Container">
       <div className="nav-background-color"></div>
@@ -41,10 +41,10 @@ const SingleBg = ({ img, house }) => {
               img2={images[2]}
               img3={images[3]}
               img4={images[4]}
+              house={house}
             />
             <div className="parallaxx__card-2">
               <ParallaxCard house={house} />
-              {/* <h4>I am Stack!!!</h4> */}
             </div>
           </div>
         </div>

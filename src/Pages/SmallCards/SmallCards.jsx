@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Card.scss";
+import "./SmallCards.scss";
 import SmallCard from "../../Components/SmallCard/SmallCard";
 import icon1 from "../../External/icons/icon-1.svg";
 import icon2 from "../../External/icons/icon-2.svg";

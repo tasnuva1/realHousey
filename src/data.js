@@ -233,7 +233,7 @@ export default [
       imgR: imgR1,
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
-      email: "alexander.realabode@gmail.com",
+      email: "alexander.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 3,
@@ -317,7 +317,7 @@ export default [
       imgR: imgR2,
       mobileNum: "(415) 660-9955",
       licenseNum: "#01340326",
-      email: "danielle.realabode@gmail.com",
+      email: "danielle.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Property Information © 2020 MLSListings Inc. All rights reserved. Certain information contained herein is derived from information which is the licensed property of, and copyrighted by, MLSListings Inc.",
       beds: 3,
@@ -401,7 +401,7 @@ export default [
       imgR: imgR3,
       mobileNum: "(415) 738-7000",
       licenseNum: "#01869674",
-      email: "maureen.realabode@gmail.com",
+      email: "maureen.realhousey@gmail.com",
       description:
         "© Copyright 2020 Maureen Terris (DRE 01869674) | Texas Real Estate. All Rights Reserved site by Intersect.Marketing",
       beds: 4,
@@ -485,7 +485,7 @@ export default [
       imgR: imgR4,
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
-      email: "ron.realabode@gmail.com",
+      email: "ron.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the Utah Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 4,
@@ -569,7 +569,7 @@ export default [
       imgR: imgR5,
       mobileNum: "(415) 692-3651",
       licenseNum: "#01712941",
-      email: "trang.realabode@gmail.com",
+      email: "trang.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the Utah Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 5,
@@ -653,7 +653,7 @@ export default [
       imgR: imgR6,
       mobileNum: "(415) 566-1112",
       licenseNum: "#01320348",
-      email: "jason.realabode@gmail.com",
+      email: "jason.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the Utah Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 3,
@@ -737,7 +737,7 @@ export default [
       imgR: imgR7,
       mobileNum: "(415) 929-1500",
       licenseNum: "#01997782",
-      email: "lauren.realabode@gmail.com",
+      email: "lauren.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 5,
@@ -821,7 +821,7 @@ export default [
       imgR: imgR8,
       mobileNum: "(415) 564-9777",
       licenseNum: "#01199229",
-      email: "andrew.realabode@gmail.com",
+      email: "andrew.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the Utah Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 5,
@@ -905,7 +905,7 @@ export default [
       imgR: imgR9,
       mobileNum: "(415) 385-5595",
       licenseNum: "#01955427",
-      email: "alek.realabode@gmail.com",
+      email: "alek.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 5,
@@ -989,7 +989,7 @@ export default [
       imgR: imgR10,
       mobileNum: "(415) 516-4525",
       licenseNum: "#01228466",
-      email: "jessica.realabode@gmail.com",
+      email: "jessica.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 4,
@@ -1073,7 +1073,7 @@ export default [
       imgR: imgR11,
       mobileNum: "(408) 981-6012",
       licenseNum: "#01049403",
-      email: "alana.realabode@gmail.com",
+      email: "alana.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Property Information © 2020 MLSListings Inc. All rights reserved. Certain information contained herein is derived from information which is the licensed property of, and copyrighted by, MLSListings Inc.",
       beds: 6,
@@ -1157,7 +1157,7 @@ export default [
       imgR: imgR12,
       mobileNum: "(415) 308-8184",
       licenseNum: "#01028702",
-      email: "joel.realabode@gmail.com",
+      email: "joel.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
       beds: 5,
@@ -1241,7 +1241,7 @@ export default [
       imgR: imgR13,
       mobileNum: "(415) 525-4913",
       licenseNum: "#00960422",
-      email: "alana.realabode@gmail.com",
+      email: "alana.realhousey@gmail.com",
       description:
         "MLS Disclaimer: Property Information © 2020 MLSListings Inc. All rights reserved. Certain information contained herein is derived from information which is the licensed property of, and copyrighted by, MLSListings Inc.",
       beds: 6,

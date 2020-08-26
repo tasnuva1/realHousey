@@ -47,7 +47,7 @@
   .parallaxx__box {
     position: absolute;
     top: 80rem;
-    height: 400rem; // Have to change in the future
+    height: 400rem;
     font-size: 4rem;
     width: 100%;
     background: #d3e2f2;
@@ -64,31 +64,3 @@
     }
   }
 }
-
-// /////////////////////////// Brack Point ///////////////////////////
-
-// @media screen and (max-width: 1888px) {
-//   .parallaxx__imagee .parallaxx__box .parallaxx__card-2 {
-//     top: 80rem;
-//   }
-// }
-// @media screen and (max-width: 1850px) {
-//   .parallaxx__imagee .parallaxx__box .parallaxx__card-2 {
-//     top: 78rem;
-//   }
-// }
-// @media screen and (max-width: 1849px) {
-//   .parallaxx__imagee .parallaxx__box .parallaxx__card-2 {
-//     top: 75rem;
-//   }
-// }
-// @media screen and (max-width: 1687px) {
-//   .parallaxx__imagee .parallaxx__box .parallaxx__card-2 {
-//     top: 70rem;
-//   }
-// }
-// @media screen and (max-width: 1366px) {
-//   .parallaxx__imagee .parallaxx__box .parallaxx__card-2 {
-//     top: 70rem;
-//   }
-// }

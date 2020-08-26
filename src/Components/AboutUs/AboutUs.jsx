@@ -4,7 +4,7 @@ import Heading from "../Heading/Heading";
 
 const AboutUs = () => {
   return (
-    <div className="whole-box">
+    <div className="whole-box" id="about">
       <div className="about-us-page">
         <div className="img-box">
           <img

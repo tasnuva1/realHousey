@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import Client from "./Contentful";
-// import items from "./data";
-// Client.getEntries({
-//   content_type: "realHousey",
-// }).then((response) => console.log(response.items));
 
 const HouseContext = React.createContext();
 
@@ -59,8 +55,9 @@ class HouseProvider extends Component {
     let tempItems = items.map((item) => {
       let id = item.sys.id;
       let images = item.fields.images.map((image) => image.fields.file.url);
+      let imagesURLs = item.fields.images.map((image) => image.fields.file);
       let imgR = item.fields.imgR.fields.file.url;
-      let house = { ...item.fields, images, id, imgR };
+      let house = { ...item.fields, images, id, imgR, imagesURLs };
       return house;
     });
     return tempItems;

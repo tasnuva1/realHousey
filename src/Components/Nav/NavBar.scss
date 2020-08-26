@@ -1,3 +1,16 @@
+.navbarq {
+  width: 100%;
+  justify-content: center;
+  transition: 0.45s;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0rem;
+  background-color: #fff;
+  border-bottom: 1px solid #494646;
+}
+
 header {
   display: flex;
   width: 90%;
@@ -12,7 +25,6 @@ header {
     display: flex;
   }
   .logo-container {
-    // margin-right: ;
     width: 5rem;
     flex: 1;
   }
@@ -21,19 +33,14 @@ header {
 
   .nav-container {
     display: flex;
-    // width: 10%;
-    // justify-content: space-evenly;
-    // flex: 1;
     align-items: center;
 
     .nav-li {
       margin-right: 10rem;
-      // margin-top: 2rem;
     }
   }
 
   .logo-container {
-    // flex: 1;
     width: 5rem;
 
     .logo-text {
@@ -61,15 +68,13 @@ header {
       font-size: 2.4rem;
       line-height: 2.8rem;
       color: #494646;
+      width: 5rem;
+      height: 2rem;
     }
-  }
-
-  .button {
-    flex: 1;
   }
 }
 
-///////////////////////////////// Brack Point
+/////////////////////////// Brack Point ///////////////////////////
 
 @media screen and (max-width: 440px) {
   header nav {

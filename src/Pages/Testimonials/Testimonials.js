@@ -13,9 +13,9 @@ const Testimonials = () => {
     <div className="testimonials-container">
       <div className="testimonials-top">
         <Content
-          heading1="Works"
-          heading2="How It Works"
-          para="Our extensive network in the global real estate market allows us to locate the best properties for investment."
+          heading1="Testimonials"
+          heading2="What They Are Saying"
+          para="Our business is built on trust and integrity. This is intrinsic in everything we do and is what gives our clients, colleagues, suppliers, partners, and investors the confidence to work with us."
           mTop="yes"
         />
       </div>

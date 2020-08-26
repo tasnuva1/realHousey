@@ -26,13 +26,13 @@ export const Main = () => {
               </h1>
               <p>
                 The ultimate luxury is being able to relax and <span></span>{" "}
-                enjoy your home. RealAbode has over one <span></span> million
+                enjoy your home. RealHousey has over one <span></span> million
                 homes for sale and to rent.
               </p>
             </div>
 
             <div className="cta">
-              <Link to="/house">
+              <Link to="/agentfinder">
                 <Button>Learn More</Button>
               </Link>
             </div>

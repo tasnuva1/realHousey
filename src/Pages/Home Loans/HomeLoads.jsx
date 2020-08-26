@@ -9,6 +9,8 @@ import Button from "../../Components/Button/Button";
 import houseSVG from "../../External/img/documents-search.svg";
 import LastSVG from "../../External/img/calculator.svg";
 import { Link } from "react-router-dom";
+import Footer from "../../Components/Footer/Footer";
+import FooterSmall from "../../Components/FooterSmall/FooterSmall";
 
 let HeadingStyle = {
   textAlign: "left",
@@ -51,7 +53,7 @@ const HomeLoads = () => {
   const isTabletOrMobileDevice = useMediaQuery({ query: "(max-width: 514px)" });
   const isMobileDevice = useMediaQuery({ query: "(max-width: 333px)" });
   return (
-    <>
+    <div id="sell-heading-height">
       <div className="sell-heading-containerr">
         <div className="sell-backgroud"></div>
         <div className="sell-heading-container">
@@ -92,7 +94,7 @@ const HomeLoads = () => {
         </div>
       </div>
 
-      <div className="sell-2">
+      <div className="sell-2-homeloads">
         <div className="sell-2-in">
           <div className="sell-content sell-content-2">
             {isMobileDevice ? (
@@ -237,7 +239,8 @@ const HomeLoads = () => {
           <Button>Calculate</Button>
         </a>
       </div>
-    </>
+      <FooterSmall />
+    </div>
   );
 };
 

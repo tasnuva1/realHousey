@@ -19,6 +19,7 @@ $letterStagger: 0.1s;
     border: 1.3rem solid #ffffff;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px rgba(21, 20, 20, 0.34);
+    margin-bottom: 10rem;
   }
 
   .image-gallary-box--container {
@@ -51,6 +52,7 @@ $letterStagger: 0.1s;
       justify-content: space-between;
       width: 75rem;
       flex-wrap: wrap;
+      margin-top: 4rem;
 
       img {
         &:nth-child(1),

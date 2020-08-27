@@ -4,6 +4,7 @@ import "./ImageGallary.scss";
 
 import SimpleImageSlider from "react-simple-image-slider";
 import icon from "../../External/icons/close.svg";
+import ImageGallaryIcon from "../ImageGallaryIcon/ImageGallaryIcon";
 
 const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
   const [openGallary, setopenGallary] = useState(false);
@@ -54,6 +55,7 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
               onClick={() => setopenGallary(true)}
             />
           </div>
+          <ImageGallaryIcon onClick={() => setopenGallary(true)} />
         </div>
       </div>
       {/* popup */}

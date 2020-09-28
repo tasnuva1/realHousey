@@ -6,10 +6,12 @@ import SimpleImageSlider from "react-simple-image-slider";
 import icon from "../../External/icons/close.svg";
 import ImageGallaryIcon from "../ImageGallaryIcon/ImageGallaryIcon";
 
-const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
+const ImageGallary = ({ house }) => {
   const [openGallary, setopenGallary] = useState(false);
 
-  const { imagesURLs } = house;
+  const { imagesURLs, imagesURLsGalary } = house;
+
+  console.log(imagesURLsGalary);
 
   const isTablet = useMediaQuery({ query: "(max-width: 794px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 424px)" });
@@ -40,16 +42,20 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
   return (
     <>
       <div className="image-gallary-container">
-        <img className="image-gallary-main" src={mainImage} alt="main-image" />
+        <img
+          className="image-gallary-main"
+          src={imagesURLs[0]}
+          alt="main-image"
+        />
         <div className="image-gallary-box--container">
           <div className="image-gallary-box1" style={{ SmallBox }}>
-            <img src={img1} alt="image" />
-            <img src={img2} alt="image" />
+            <img src={imagesURLs[1]} alt="image" />
+            <img src={imagesURLs[2]} alt="image" />
           </div>
           <div className="image-gallary-box2" style={{ SmallBox }}>
-            <img src={img3} alt="image" />
+            <img src={imagesURLs[3]} alt="image" />
             <img
-              src={img4}
+              src={imagesURLs[4]}
               alt="image"
               className="popup-button"
               onClick={() => setopenGallary(true)}
@@ -86,7 +92,7 @@ const ImageGallary = ({ mainImage, img1, img2, img3, img4, house }) => {
                   (isTabletOrMobile ? "50rem" : "70rem")
                 }
                 slideDuration={1.2}
-                images={imagesURLs}
+                images={imagesURLsGalary}
               />
             )}
             <img

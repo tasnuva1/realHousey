@@ -230,7 +230,13 @@ export default [
       improvements: "$374,544",
       total: "$1,248,480",
       nameR: "Alexander Mulder",
-      imgR: imgR1,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR1,
+          },
+        },
+      },
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
       email: "alexander.realhousey@gmail.com",
@@ -314,7 +320,13 @@ export default [
       improvements: "$231,371",
       total: "$771,248",
       nameR: "Danielle Lazier",
-      imgR: imgR2,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR2,
+          },
+        },
+      },
       mobileNum: "(415) 660-9955",
       licenseNum: "#01340326",
       email: "danielle.realhousey@gmail.com",
@@ -398,7 +410,13 @@ export default [
       improvements: "$508,247",
       total: "$1,016,494",
       nameR: "Maureen Terris",
-      imgR: imgR3,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR3,
+          },
+        },
+      },
       mobileNum: "(415) 738-7000",
       licenseNum: "#01869674",
       email: "maureen.realhousey@gmail.com",
@@ -482,7 +500,13 @@ export default [
       improvements: "$576,930",
       total: "$1,153,860",
       nameR: "Ron Abta",
-      imgR: imgR4,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR4,
+          },
+        },
+      },
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
       email: "ron.realhousey@gmail.com",
@@ -566,7 +590,13 @@ export default [
       improvements: "$250,489",
       total: "$536,764",
       nameR: "Trang Dunlap",
-      imgR: imgR5,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR5,
+          },
+        },
+      },
       mobileNum: "(415) 692-3651",
       licenseNum: "#01712941",
       email: "trang.realhousey@gmail.com",
@@ -650,7 +680,13 @@ export default [
       improvements: "$382,034",
       total: "$1,273,448",
       nameR: "Jason Chan",
-      imgR: imgR6,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR6,
+          },
+        },
+      },
       mobileNum: "(415) 566-1112",
       licenseNum: "#01320348",
       email: "jason.realhousey@gmail.com",
@@ -734,7 +770,13 @@ export default [
       improvements: "$71,424",
       total: "$120,896",
       nameR: "Lauren Fraser",
-      imgR: imgR7,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR7,
+          },
+        },
+      },
       mobileNum: "(415) 929-1500",
       licenseNum: "#01997782",
       email: "lauren.realhousey@gmail.com",
@@ -818,7 +860,13 @@ export default [
       improvements: "$428,576",
       total: "$1,428,588",
       nameR: "Andrew Herrera",
-      imgR: imgR8,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR8,
+          },
+        },
+      },
       mobileNum: "(415) 564-9777",
       licenseNum: "#01199229",
       email: "andrew.realhousey@gmail.com",
@@ -902,7 +950,13 @@ export default [
       improvements: "$358,869",
       total: "$897,178",
       nameR: "Alek Keytiyev",
-      imgR: imgR9,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR9,
+          },
+        },
+      },
       mobileNum: "(415) 385-5595",
       licenseNum: "#01955427",
       email: "alek.realhousey@gmail.com",
@@ -986,7 +1040,13 @@ export default [
       improvements: "$275,299",
       total: "$688,252",
       nameR: "Jessica Rucker",
-      imgR: imgR10,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR10,
+          },
+        },
+      },
       mobileNum: "(415) 516-4525",
       licenseNum: "#01228466",
       email: "jessica.realhousey@gmail.com",
@@ -1070,7 +1130,13 @@ export default [
       improvements: "$406,500",
       total: "$1,355,000",
       nameR: "Alana Lam",
-      imgR: imgR11,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR11,
+          },
+        },
+      },
       mobileNum: "(408) 981-6012",
       licenseNum: "#01049403",
       email: "alana.realhousey@gmail.com",
@@ -1154,7 +1220,13 @@ export default [
       improvements: "$758,250",
       total: "$2,527,502",
       nameR: "Joel Goodrich",
-      imgR: imgR12,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR12,
+          },
+        },
+      },
       mobileNum: "(415) 308-8184",
       licenseNum: "#01028702",
       email: "joel.realhousey@gmail.com",
@@ -1238,7 +1310,13 @@ export default [
       improvements: "$1,278,754",
       total: "$2,557,508",
       nameR: "Cynthia Cummins",
-      imgR: imgR13,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR13,
+          },
+        },
+      },
       mobileNum: "(415) 525-4913",
       licenseNum: "#00960422",
       email: "alana.realhousey@gmail.com",

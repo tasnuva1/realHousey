@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const Houses = ({ house }) => {
   const {
     name,
-    type,
     images,
     price,
     haffEndAddress,

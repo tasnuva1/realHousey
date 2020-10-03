@@ -8,8 +8,6 @@ import Button from "../../Components/Button/Button";
 
 import houseSVG from "../../External/img/documents-search.svg";
 import LastSVG from "../../External/img/calculator.svg";
-import { Link } from "react-router-dom";
-import Footer from "../../Components/Footer/Footer";
 import FooterSmall from "../../Components/FooterSmall/FooterSmall";
 
 let HeadingStyle = {
@@ -235,7 +233,11 @@ const HomeLoads = () => {
         <Heading heading="heading2" style={ListHeading2}>
           For More About Mortgage Rates In USA
         </Heading>
-        <a href="https://www.mortgagecalculator.org/" target="_blank">
+        <a
+          href="https://www.mortgagecalculator.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button>Calculate</Button>
         </a>
       </div>

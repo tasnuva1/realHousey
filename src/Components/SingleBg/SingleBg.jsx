@@ -1,22 +1,12 @@
 import React from "react";
 import "./SingleBg.scss";
-import { render } from "react-dom";
-
-import "./SingleBg.scss";
-import { HouseContext } from "../../Context";
 import ImageGallary from "../ImageGallary/ImageGallary";
-
-import img1 from "../../External/house-images/house11.jpg";
-import img2 from "../../External/house-images/house2.jpg";
-import img3 from "../../External/house-images/house3.jpg";
-import img4 from "../../External/house-images/house4.jpg";
-import img5 from "../../External/house-images/house5.jpg";
 
 import ParallaxCard from "../ParallaxCard/ParallaxCard";
 
-const SingleBg = ({ img, house }) => {
-  const { name, haffStartAddress, haffEndAddress, images, imagesURLs } = house;
-  console.log(imagesURLs);
+const SingleBg = ({ house }) => {
+  const { name, haffStartAddress, haffEndAddress, images } = house;
+
   return (
     <div className="nav-background-color-Container">
       <div className="nav-background-color"></div>

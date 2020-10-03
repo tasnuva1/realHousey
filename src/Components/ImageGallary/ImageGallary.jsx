@@ -11,7 +11,7 @@ const ImageGallary = ({ house }) => {
 
   const { imagesURLs, imagesURLsGalary } = house;
 
-  console.log(imagesURLsGalary);
+  // console.log(imagesURLsGalary);
 
   const isTablet = useMediaQuery({ query: "(max-width: 794px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 424px)" });
@@ -19,7 +19,7 @@ const ImageGallary = ({ house }) => {
   const isSmallMobile = useMediaQuery({ query: "(max-width: 206px)" });
 
   let width;
-  let height;
+  // let height;
   if (isTablet) {
     width = "130rem";
   } else if (isTabletOrMobile) {
@@ -42,21 +42,17 @@ const ImageGallary = ({ house }) => {
   return (
     <>
       <div className="image-gallary-container">
-        <img
-          className="image-gallary-main"
-          src={imagesURLs[0]}
-          alt="main-image"
-        />
+        <img className="image-gallary-main" src={imagesURLs[0]} alt="main" />
         <div className="image-gallary-box--container">
           <div className="image-gallary-box1" style={{ SmallBox }}>
-            <img src={imagesURLs[1]} alt="image" />
-            <img src={imagesURLs[2]} alt="image" />
+            <img src={imagesURLs[1]} alt="submain" />
+            <img src={imagesURLs[2]} alt="submain" />
           </div>
           <div className="image-gallary-box2" style={{ SmallBox }}>
-            <img src={imagesURLs[3]} alt="image" />
+            <img src={imagesURLs[3]} alt="submain" />
             <img
               src={imagesURLs[4]}
-              alt="image"
+              alt="submain"
               className="popup-button"
               onClick={() => setopenGallary(true)}
             />

@@ -1,6 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./Footer.scss";
 
 import icon from "../../External/icons/facebook.svg";
@@ -126,16 +125,32 @@ const Footer = () => {
                 <h3>realhousey@gmail.com</h3>
               </div>
               <div className="fooder-madia-links">
-                <a href="https://www.facebook.com/" target="_blank">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={icon} alt="social link" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={icon2} alt="social link" />
                 </a>
-                <a href="https://www.pinterest.com/" target="_blank">
+                <a
+                  href="https://www.pinterest.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={icon3} alt="social link" />
                 </a>
-                <a href="https://www.reddit.com/" target="_blank">
+                <a
+                  href="https://www.reddit.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={icon4} alt="social link" />
                 </a>
               </div>

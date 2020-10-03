@@ -21,7 +21,7 @@ const ContactDetailsCard = ({
           <h3>REALTOR /Listing provided by</h3>
         </div>
         <div className="contact-details-name">
-          <img src={`${img}`} alt="Realtor-Image" />
+          <img src={`${img}`} alt="Realtor" />
           <h3>{name}</h3>
         </div>
         <div className="contact-details-info">

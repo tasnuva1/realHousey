@@ -16,6 +16,7 @@ html,
 body {
   height: 100%;
 }
+
 .full-hight {
   min-height: 100%;
 }
@@ -99,12 +100,6 @@ a {
     font-size: 6.6px;
   }
 }
-
-// @media screen and (max-width: 1339px) {
-//   html {
-//     font-size: 6.2px;
-//   }
-// }
 
 @media screen and (max-width: 1267px) {
   .svgs {

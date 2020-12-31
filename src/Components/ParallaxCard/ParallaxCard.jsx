@@ -1,8 +1,8 @@
-import React from "react";
-import "./ParallaxCard.scss";
-import TableCard from "../TableCard/TableCard";
-import ContactDetailsCard from "../ContactDetailsCard/ContactDetailsCard";
-import InnerCard from "../InnerCard/InnerCard";
+import React from 'react';
+import './ParallaxCard.scss';
+import TableCard from '../TableCard/TableCard';
+import ContactDetailsCard from '../ContactDetailsCard/ContactDetailsCard';
+import InnerCard from '../InnerCard/InnerCard';
 
 const ParallaxCard = ({ house }) => {
   const {
@@ -23,27 +23,27 @@ const ParallaxCard = ({ house }) => {
     description,
     beds,
     baths,
-    Sqft,
+    sqft,
   } = house;
   return (
     <div>
-      <div className="parallaxx-card--box_con-1">
+      <div className='parallaxx-card--box_con-1'>
         <InnerCard
           title={haffStartAddress}
           subTitle={haffEndAddress}
           beds={beds}
           baths={baths}
-          Sqft={Sqft}
+          sqft={sqft}
         />
         <InnerCard
           title={price}
           subTitle={mo}
           beds={beds}
           baths={baths}
-          Sqft={Sqft}
+          sqft={sqft}
         />
       </div>
-      <div className="parallaxx-card--box_con-2">
+      <div className='parallaxx-card--box_con-2'>
         <TableCard
           year={year}
           tax={tax}

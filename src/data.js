@@ -1,7 +1,7 @@
-import room1 from "./External/house-images/house13.jpg";
-import room2 from "./images/details-2.jpeg";
-import room3 from "./images/details-3.jpeg";
-import room4 from "./images/details-4.jpeg";
+// import room1 from "./External/house-images/house13.jpg";
+// import room2 from "./images/details-2.jpeg";
+// import room3 from "./images/details-3.jpeg";
+// import room4 from "./images/details-4.jpeg";
 import img1 from "./External/House-and-Inside-Images/img1/house1.jpg";
 import img2 from "./External/House-and-Inside-Images/img2/house2.jpg";
 import img3 from "./External/House-and-Inside-Images/img3/house3.jpg";
@@ -207,7 +207,62 @@ import imgR10 from "./External/RealtorImage/jessica.jpg";
 import imgR11 from "./External/RealtorImage/alana.jpg";
 import imgR12 from "./External/RealtorImage/joel.jpg";
 import imgR13 from "./External/RealtorImage/cynthia.jpg";
+///////////////////////////
 
+// {
+// 	"name": "landscaping house",
+//       "slug": "landscaping-1",
+//       "type": "Landscaping",
+//       "address": "186 Francisco St APT 2, San Francisco, CA 94133",
+//       "haffStartAddress": "186 Francisco St APT 2",
+//       "haffEndAddress": "San Francisco, CA 94133",
+//       "usState": "California",
+//       "price": "$826K",
+//       "priceNum": 826000,
+//       "mo": "Est. Mortgage $3,870/mo",
+//       "year": "2019",
+//       "tax": "$15,504",
+//       "land": "$873,936",
+//       "improvements": "$374,544",
+//       "total": "$1,248,480",
+//       "nameR": "Alexander Mulder",
+//       "mobileNum": "(415) 595-7661",
+//       "licenseNum": "#02014153",
+//       "email": "alexander.realhousey@gmail.com",
+//       "description":
+//         "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
+//       "beds": 3,
+//       "baths": 2,
+//       "Sqft": "1,340",
+//       "sqftNum": 1340,
+//       "featured": true
+// }
+
+////////////////////////////
+// "address": "186 Francisco St APT 2, San Francisco, CA 94133",
+// "haffStartAddress": "186 Francisco St APT 2",
+// "haffEndAddress": "San Francisco, CA 94133",
+// "usState": "California",
+// "price": "$826K",
+// "priceNum": 826000,
+// "mo": "Est. Mortgage $3,870/mo",
+// "year": "2019",
+// "tax": "$15,504",
+// "land": "$873,936",
+// "improvements": "$374,544",
+// "total": "$1,248,480",
+// "nameR": "Alexander Mulder",
+// "mobileNum": "(415) 595-7661",
+// "licenseNum": "#02014153",
+// "email": "alexander.realhousey@gmail.com",
+// "description":
+//   "MLS Disclaimer: Copyrighted by the California Association of REALTORS. All rights reserved. Information is deemed reliable but not guaranteed.",
+// "beds": 3,
+// "baths": 2,
+// "Sqft": "1,340",
+// "sqftNum": 1340,
+// "featured": true
+////////////////////////////
 export default [
   {
     sys: {
@@ -230,7 +285,13 @@ export default [
       improvements: "$374,544",
       total: "$1,248,480",
       nameR: "Alexander Mulder",
-      imgR: imgR1,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR1,
+          },
+        },
+      },
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
       email: "alexander.realhousey@gmail.com",
@@ -239,21 +300,9 @@ export default [
       beds: 3,
       baths: 2,
       Sqft: "1,340",
-      SqftNum: 1340,
+      sqftNum: 1340,
       size: 200,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -314,7 +363,13 @@ export default [
       improvements: "$231,371",
       total: "$771,248",
       nameR: "Danielle Lazier",
-      imgR: imgR2,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR2,
+          },
+        },
+      },
       mobileNum: "(415) 660-9955",
       licenseNum: "#01340326",
       email: "danielle.realhousey@gmail.com",
@@ -323,21 +378,8 @@ export default [
       beds: 3,
       baths: 2,
       Sqft: "1,267",
-      SqftNum: 1267,
-      size: 250,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
+      sqftNum: 1267,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -356,21 +398,49 @@ export default [
         {
           fields: {
             file: {
-              url: img3Room2,
+              url: img2Room2,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img4Room3,
+              url: img2Room3,
             },
           },
         },
         {
           fields: {
             file: {
-              url: img4Room4,
+              url: img2Room4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img2Room8,
             },
           },
         },
@@ -398,7 +468,13 @@ export default [
       improvements: "$508,247",
       total: "$1,016,494",
       nameR: "Maureen Terris",
-      imgR: imgR3,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR3,
+          },
+        },
+      },
       mobileNum: "(415) 738-7000",
       licenseNum: "#01869674",
       email: "maureen.realhousey@gmail.com",
@@ -407,21 +483,8 @@ export default [
       beds: 4,
       baths: 3,
       Sqft: "1,440",
-      SqftNum: 1440,
-      size: 300,
-      capacity: 1,
-      pets: true,
-      breakfast: false,
+      sqftNum: 1440,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -458,6 +521,132 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img3Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room12,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room13,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room14,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room15,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room16,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room17,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room17,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room18,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room19,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room20,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img3Room21,
+            },
+          },
+        },
       ],
     },
   },
@@ -482,7 +671,13 @@ export default [
       improvements: "$576,930",
       total: "$1,153,860",
       nameR: "Ron Abta",
-      imgR: imgR4,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR4,
+          },
+        },
+      },
       mobileNum: "(415) 595-7661",
       licenseNum: "#02014153",
       email: "ron.realhousey@gmail.com",
@@ -491,21 +686,8 @@ export default [
       beds: 4,
       baths: 2,
       Sqft: "1,473",
-      SqftNum: 1473,
-      size: 400,
-      capacity: 1,
-      pets: true,
-      breakfast: true,
+      sqftNum: 1473,
       featured: false,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -542,6 +724,139 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img4Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room12,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room13,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room14,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room15,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room16,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room17,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room18,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room19,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room20,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room21,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room22,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img4Room23,
+            },
+          },
+        },
       ],
     },
   },
@@ -566,7 +881,13 @@ export default [
       improvements: "$250,489",
       total: "$536,764",
       nameR: "Trang Dunlap",
-      imgR: imgR5,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR5,
+          },
+        },
+      },
       mobileNum: "(415) 692-3651",
       licenseNum: "#01712941",
       email: "trang.realhousey@gmail.com",
@@ -575,21 +896,8 @@ export default [
       beds: 5,
       baths: 3,
       Sqft: "1,632",
-      SqftNum: 1632,
-      size: 300,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
+      sqftNum: 1632,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -626,6 +934,97 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img5Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room12,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room13,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room14,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room15,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room16,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img5Room17,
+            },
+          },
+        },
       ],
     },
   },
@@ -650,7 +1049,13 @@ export default [
       improvements: "$382,034",
       total: "$1,273,448",
       nameR: "Jason Chan",
-      imgR: imgR6,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR6,
+          },
+        },
+      },
       mobileNum: "(415) 566-1112",
       licenseNum: "#01320348",
       email: "jason.realhousey@gmail.com",
@@ -659,21 +1064,8 @@ export default [
       beds: 3,
       baths: 2,
       Sqft: "1,498",
-      SqftNum: 1498,
-      size: 350,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
+      sqftNum: 1498,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -710,6 +1102,111 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img6Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room12,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room13,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room14,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room15,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room16,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room17,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room18,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img6Room19,
+            },
+          },
+        },
       ],
     },
   },
@@ -734,7 +1231,13 @@ export default [
       improvements: "$71,424",
       total: "$120,896",
       nameR: "Lauren Fraser",
-      imgR: imgR7,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR7,
+          },
+        },
+      },
       mobileNum: "(415) 929-1500",
       licenseNum: "#01997782",
       email: "lauren.realhousey@gmail.com",
@@ -743,21 +1246,8 @@ export default [
       beds: 5,
       baths: 3,
       Sqft: "1,680",
-      SqftNum: 1680,
-      size: 400,
-      capacity: 2,
-      pets: true,
-      breakfast: false,
+      sqftNum: 1680,
       featured: false,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -794,6 +1284,48 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img7Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img7Room10,
+            },
+          },
+        },
       ],
     },
   },
@@ -818,7 +1350,13 @@ export default [
       improvements: "$428,576",
       total: "$1,428,588",
       nameR: "Andrew Herrera",
-      imgR: imgR8,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR8,
+          },
+        },
+      },
       mobileNum: "(415) 564-9777",
       licenseNum: "#01199229",
       email: "andrew.realhousey@gmail.com",
@@ -827,21 +1365,8 @@ export default [
       beds: 5,
       baths: 2,
       Sqft: "1,750",
-      SqftNum: 1750,
-      size: 500,
-      capacity: 2,
-      pets: true,
-      breakfast: true,
+      sqftNum: 1750,
       featured: false,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -878,6 +1403,62 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img8Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img8Room12,
+            },
+          },
+        },
       ],
     },
   },
@@ -902,7 +1483,13 @@ export default [
       improvements: "$358,869",
       total: "$897,178",
       nameR: "Alek Keytiyev",
-      imgR: imgR9,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR9,
+          },
+        },
+      },
       mobileNum: "(415) 385-5595",
       licenseNum: "#01955427",
       email: "alek.realhousey@gmail.com",
@@ -911,21 +1498,8 @@ export default [
       beds: 5,
       baths: 4,
       Sqft: "1,791",
-      SqftNum: 1791,
-      size: 500,
-      capacity: 3,
-      pets: false,
-      breakfast: false,
+      sqftNum: 1791,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -962,6 +1536,20 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img9Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img9Room6,
+            },
+          },
+        },
       ],
     },
   },
@@ -986,7 +1574,13 @@ export default [
       improvements: "$275,299",
       total: "$688,252",
       nameR: "Jessica Rucker",
-      imgR: imgR10,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR10,
+          },
+        },
+      },
       mobileNum: "(415) 516-4525",
       licenseNum: "#01228466",
       email: "jessica.realhousey@gmail.com",
@@ -995,21 +1589,8 @@ export default [
       beds: 4,
       baths: 2,
       Sqft: "1,577",
-      SqftNum: 1577,
-      size: 550,
-      capacity: 4,
-      pets: false,
-      breakfast: false,
+      sqftNum: 1577,
       featured: false,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -1046,6 +1627,20 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img10Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img10Room6,
+            },
+          },
+        },
       ],
     },
   },
@@ -1070,7 +1665,13 @@ export default [
       improvements: "$406,500",
       total: "$1,355,000",
       nameR: "Alana Lam",
-      imgR: imgR11,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR11,
+          },
+        },
+      },
       mobileNum: "(408) 981-6012",
       licenseNum: "#01049403",
       email: "alana.realhousey@gmail.com",
@@ -1079,21 +1680,8 @@ export default [
       beds: 6,
       baths: 4,
       Sqft: "2,493",
-      SqftNum: 2493,
-      size: 600,
-      capacity: 5,
-      pets: true,
-      breakfast: false,
+      sqftNum: 2493,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -1130,6 +1718,34 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img11Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img11Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img11Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img11Room8,
+            },
+          },
+        },
       ],
     },
   },
@@ -1154,7 +1770,13 @@ export default [
       improvements: "$758,250",
       total: "$2,527,502",
       nameR: "Joel Goodrich",
-      imgR: imgR12,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR12,
+          },
+        },
+      },
       mobileNum: "(415) 308-8184",
       licenseNum: "#01028702",
       email: "joel.realhousey@gmail.com",
@@ -1163,21 +1785,8 @@ export default [
       beds: 5,
       baths: 3,
       Sqft: "2,128",
-      SqftNum: 2128,
-      size: 700,
-      capacity: 6,
-      pets: true,
-      breakfast: true,
+      sqftNum: 2128,
       featured: true,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -1214,6 +1823,62 @@ export default [
             },
           },
         },
+        {
+          fields: {
+            file: {
+              url: img12Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img12Room12,
+            },
+          },
+        },
       ],
     },
   },
@@ -1238,7 +1903,13 @@ export default [
       improvements: "$1,278,754",
       total: "$2,557,508",
       nameR: "Cynthia Cummins",
-      imgR: imgR13,
+      imgR: {
+        fields: {
+          file: {
+            url: imgR13,
+          },
+        },
+      },
       mobileNum: "(415) 525-4913",
       licenseNum: "#00960422",
       email: "alana.realhousey@gmail.com",
@@ -1247,21 +1918,8 @@ export default [
       beds: 6,
       baths: 4,
       Sqft: "2,893",
-      SqftNum: 2893,
-      size: 1000,
-      capacity: 10,
-      pets: true,
-      breakfast: true,
+      sqftNum: 2893,
       featured: false,
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
       images: [
         {
           fields: {
@@ -1295,6 +1953,69 @@ export default [
           fields: {
             file: {
               url: img13Room4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room8,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room9,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room10,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room11,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room12,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: img13Room13,
             },
           },
         },

@@ -4,7 +4,6 @@ import { useContext } from "react";
 import "./HouseSearchFilter.scss";
 import "./HouseSearchFilter.scss";
 import { HouseContext } from "../../Context";
-import Heading from "../Heading/Heading";
 import Content from "../Content-Container/Content";
 
 const getUnique = (items, value) => {

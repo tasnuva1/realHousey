@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+// import items from "./data";
 import Client from "./Contentful";
 
 const HouseContext = React.createContext();
 
-class HouseProvider extends Component {
+// Client.getEntries({
+//   content_type: "realHousey",
+// }).then((response) => console.log(response.items));
+
+// console.log(items);
+
+export default class HouseProvider extends Component {
   state = {
     houses: [],
     sortedHouses: [],
@@ -20,7 +27,7 @@ class HouseProvider extends Component {
     maxSqftNum: 0,
   };
 
-  // getDate
+  getDate;
   getData = async () => {
     try {
       let response = await Client.getEntries({
@@ -29,9 +36,10 @@ class HouseProvider extends Component {
         order: "fields.priceNum",
       });
       let houses = this.formatData(response.items);
+      // console.log(houses);
       let featuredHouses = houses.filter((house) => house.featured === true);
       let maxPriceNum = Math.max(...houses.map((item) => item.priceNum));
-      let maxSqftNum = Math.max(...houses.map((item) => item.SqftNum));
+      let maxSqftNum = Math.max(...houses.map((item) => item.sqftNum));
 
       this.setState({
         houses,
@@ -49,15 +57,44 @@ class HouseProvider extends Component {
 
   componentDidMount() {
     this.getData();
+
+    // // Commit
+    // let houses = this.formatData(items);
+    // console.log(houses);
+    // let featuredHouses = houses.filter((house) => house.featured === true);
+    // let maxPriceNum = Math.max(...houses.map((item) => item.priceNum));
+    // let maxSqftNum = Math.max(...houses.map((item) => item.sqftNum));
+
+    // this.setState({
+    //   houses,
+    //   featuredHouses,
+    //   sortedHouses: houses,
+    //   loading: false,
+    //   priceNum: maxPriceNum,
+    //   maxPriceNum,
+    //   maxSqftNum,
+    // });
   }
 
   formatData(items) {
     let tempItems = items.map((item) => {
       let id = item.sys.id;
       let images = item.fields.images.map((image) => image.fields.file.url);
-      let imagesURLs = item.fields.images.map((image) => image.fields.file);
+      let imagesURLs = item.fields.images.map((image) => image.fields.file.url);
+      let imagesURLsGalary = item.fields.images.map(
+        (image) => image.fields.file
+      );
+      // for imagesURLs and 4 other main.
       let imgR = item.fields.imgR.fields.file.url;
-      let house = { ...item.fields, images, id, imgR, imagesURLs };
+      let house = {
+        ...item.fields,
+        images,
+        id,
+        imgR,
+        imagesURLs,
+        imagesURLsGalary,
+      };
+      // console.log(house);
       return house;
     });
     return tempItems;
@@ -122,9 +159,9 @@ class HouseProvider extends Component {
     // filter by priceNum
     tempHouses = tempHouses.filter((house) => house.priceNum <= priceNum);
 
-    // filter by SqftNum
+    // filter by sqftNum
     tempHouses = tempHouses.filter(
-      (house) => house.SqftNum >= minSqftNum && house.SqftNum <= maxSqftNum
+      (house) => house.sqftNum >= minSqftNum && house.sqftNum <= maxSqftNum
     );
 
     // Change State
@@ -150,6 +187,8 @@ class HouseProvider extends Component {
 
 const HouseConsumer = HouseContext.Consumer;
 
+export { HouseProvider, HouseConsumer, HouseContext };
+
 export function withHouseConsumer(Component) {
   return function ConsumerWrapper(props) {
     return (
@@ -159,5 +198,3 @@ export function withHouseConsumer(Component) {
     );
   };
 }
-
-export { HouseProvider, HouseConsumer, HouseContext };

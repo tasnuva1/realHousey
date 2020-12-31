@@ -20,13 +20,15 @@ const Testimonials = () => {
         />
       </div>
       <div className="testimonials-box">
-        <Testimonial
-          description="I can't believe it! We fired our last agent and hired you because we heard you were the best of the best! Well, you did it! You sold my home in 7 days after the other agent tried for 6 months! We would recommend you to anyone!"
-          title="Jeff"
-          subTitle="Charlotte, NC"
-          img={img1}
-          icon={icon}
-        />
+        <div className="testimonials-box-inner">
+          <Testimonial
+            description="I can't believe it! We fired our last agent and hired you because we heard you were the best of the best! Well, you did it! You sold my home in 7 days after the other agent tried for 6 months! We would recommend you to anyone!"
+            title="Jeff"
+            subTitle="Charlotte, NC"
+            img={img1}
+            icon={icon}
+          />
+        </div>
         <Testimonial
           description="At the end of the day, realhousey was an essential part in making sure I was able to get the price I needed. I was able to receive the best value from my home. He is not only knowledgeable about the real estate market but has a realistic view of it and his experience, advice, and wisdom made the ups and downs of selling a home easier."
           title="Aryan"

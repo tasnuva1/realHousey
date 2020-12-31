@@ -1,12 +1,14 @@
-## All The Version Of This Project:
+## This Project Description:
 
-#mobile responsive - for any screen size
+realHousey is a way to find the best Properties who are searching for properties or real state agent and for finding the real state agents that can help people with there needs. This project uses a contentful backend which is for visually explore and manipulate your data. Manage the data in a graphical user interface and providing a restful API to the front end, and the front-end is completely in react.
 
-# push 1.1v
+This project use react-router for routing, react context API for our state management, and Contentful - headless CMS for data management. This is developed with mobile responsiveness in mind. All design and development from start to finish was done by myself.
 
-# push 1.2v
+### Search Filter Features:
+The filter contains different search options such as house type, house state, house beds, house baths, house price, and house sqft.
 
-# pushed 1.3v
+Depending on the search filter It's going to dynamically render the list of houses from the database.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

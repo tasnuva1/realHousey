@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { HouseContext } from "../../Context";
 import "./SingleHouse.scss";
 import SingleBg from "../../Components/SingleBg/SingleBg";
@@ -22,7 +21,7 @@ export default class SingleHouse extends Component {
     if (!house) {
       return <Error />;
     }
-    const { name, haffStartAddress, haffEndAddress, images } = house;
+
     return (
       <div>
         {" "}

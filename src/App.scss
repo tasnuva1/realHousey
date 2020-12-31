@@ -9,13 +9,14 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html,
 body {
   height: 100%;
 }
+
 .full-hight {
   min-height: 100%;
 }
@@ -26,6 +27,7 @@ body {
 
 #house-hight {
   min-height: 100%;
+  // height: 112rem;
 }
 
 #agent-finder-hight {
@@ -42,43 +44,43 @@ a {
 
 @media screen and (max-width: 6000px) {
   html {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
 @media screen and (max-width: 5000px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 2900px) {
   html {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
 @media screen and (max-width: 2300px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
 @media screen and (max-width: 2000px) {
   html {
-    font-size: 9px;
+    font-size: 8px; // 9px
   }
 }
 
 @media screen and (max-width: 1800px) {
   html {
-    font-size: 8px;
+    font-size: 7px; // 8px
   }
 }
 
 @media screen and (max-width: 1700px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 

@@ -10,7 +10,6 @@ import houseSVG from "../../External/img/sell-house.svg";
 import LastSVG from "../../External/img/taking-notes.svg";
 import { Link } from "react-router-dom";
 import FooterSmall from "../../Components/FooterSmall/FooterSmall";
-import Footer from "../../Components/Footer/Footer";
 
 var bg = require("../../External/img/documents.svg");
 
@@ -50,12 +49,12 @@ let ListHeading2 = {
   fontSize: "4.5rem",
   marginBottom: "5.4rem",
 };
-let FooderStyle = {
-  position: "relative",
-  height: "5rem",
-  marginTop: "5rem",
-  clear: "both",
-};
+// let FooderStyle = {
+//   position: "relative",
+//   height: "5rem",
+//   marginTop: "5rem",
+//   clear: "both",
+// };
 
 const Sell = () => {
   const isTabletOrMobileDevice = useMediaQuery({ query: "(max-width: 514px)" });

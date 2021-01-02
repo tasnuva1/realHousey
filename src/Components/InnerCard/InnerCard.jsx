@@ -6,7 +6,6 @@ import icon2 from '../../External/icons/basin.svg';
 import icon3 from '../../External/icons/angle.svg';
 
 const InnerCard = ({ title, subTitle, beds, baths, sqft }) => {
-  console.log(sqft);
   return (
     <div className='inner-card-boxx'>
       <div className='inner-card-box'>

@@ -5,7 +5,6 @@ import Houses from '../../Components/Houses/Houses';
 
 const HouseSearchList = ({ houses }) => {
   if (houses.length === 0) {
-    console.log(houses.length);
     return (
       <div className='house-search-ability'>
         <Heading heading='heading3'>

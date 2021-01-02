@@ -4,12 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.git.bfg-report
 
 # testing
 /coverage
-.env
-/.env
-.vscode
 /.vscode
 # production
 /build
@@ -24,5 +22,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.env
-.env
+/.env
+

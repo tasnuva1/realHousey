@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import items from "./data";
-import Client from "./Contentful";
+import Client from './Contentful';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const HouseContext = React.createContext();
 
 // Client.getEntries({
-//   content_type: "realHousey",
+//   content_type: 'realHousey',
 // }).then((response) => console.log(response.items));
 
 // console.log(items);
@@ -16,8 +19,8 @@ export default class HouseProvider extends Component {
     sortedHouses: [],
     featuredHouses: [],
     loading: true,
-    type: "all",
-    usState: "all",
+    type: 'all',
+    usState: 'all',
     priceNum: 0,
     minPriceNum: 0,
     maxPriceNum: 0,
@@ -31,9 +34,9 @@ export default class HouseProvider extends Component {
   getData = async () => {
     try {
       let response = await Client.getEntries({
-        content_type: "realHousey",
+        content_type: 'realHousey',
         // order: "sys.createdAt",
-        order: "fields.priceNum",
+        order: 'fields.priceNum',
       });
       let houses = this.formatData(response.items);
       // console.log(houses);
@@ -108,7 +111,7 @@ export default class HouseProvider extends Component {
 
   handleChange = (event) => {
     const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = event.target.name;
     this.setState(
       {
@@ -137,12 +140,12 @@ export default class HouseProvider extends Component {
     priceNum = parseInt(priceNum);
 
     // filter by type
-    if (type !== "all") {
+    if (type !== 'all') {
       tempHouses = tempHouses.filter((house) => house.type === type);
     }
 
     // filter by usState
-    if (usState !== "all") {
+    if (usState !== 'all') {
       tempHouses = tempHouses.filter((house) => house.usState === usState);
     }
 

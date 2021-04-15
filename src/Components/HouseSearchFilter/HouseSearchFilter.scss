@@ -4,13 +4,18 @@ select {
   border: 0 !important;
 }
 
+// select:focus,
+// select:hover {
+//   color: #071738;
+// }
+
 .search-box {
   .search-box-inner {
     display: flex;
     flex-wrap: wrap;
     color: #ffffff;
     background: #266cf6;
-    padding: 2.6rem 0rem 2.6rem 12rem;
+    padding: 2.6rem 1rem 4rem 12rem;
     width: 140rem;
     margin: auto;
     border: none;
@@ -23,6 +28,7 @@ select {
   .house-search-filter-container {
     margin-right: 8rem;
     margin-top: 2rem;
+    // flex: 1;
     label {
       font-size: 2.7rem;
       color: #fff;
@@ -32,7 +38,6 @@ select {
     select {
       font-size: 2.2rem;
       color: #fff;
-      background: #7ab7e9;
       background: #1d2433;
       border-radius: 1.5rem;
       padding: 1rem;
@@ -40,7 +45,17 @@ select {
       height: 4.4rem;
       border: none;
       -webkit-appearance: button;
+      background-size: 22rem;
       outline: none;
+
+      // arrow
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url(../../External/img/dropdown.svg);
+      background-position: right 2rem top 50%;
+      background-repeat: no-repeat;
+      background-size: 2rem;
     }
 
     input[type="range"] {
@@ -48,17 +63,17 @@ select {
       outline: none;
       padding: 0;
       width: 100%;
-      height: 10px;
+      height: 2rem;
       background-color: #ffffff;
       background-repeat: no-repeat;
-      border-radius: 10px;
+      border-radius: 2rem;
       cursor: pointer;
       -webkit-appearance: none;
     }
 
     input[type="range"]::-webkit-slider-thumb {
-      width: 20px;
-      height: 20px;
+      width: 4rem;
+      height: 4rem;
       border: 0;
       background: #fff;
       border-radius: 100%;
@@ -71,8 +86,8 @@ select {
     }
 
     input[type="range"]::-moz-range-thumb {
-      width: 20px;
-      height: 20px;
+      width: 4rem;
+      height: 4rem;
       border: 0;
       background: #fff;
       border-radius: 100%;
@@ -110,5 +125,37 @@ select {
 
   100% {
     transform: translateY(-8px);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .search-box {
+    .search-box-inner {
+      width: 120rem;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .search-box {
+    .search-box-inner {
+      width: 100rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .search-box {
+    .search-box-inner {
+      width: 90rem;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .search-box {
+    .search-box-inner {
+      width: 80rem;
+    }
   }
 }

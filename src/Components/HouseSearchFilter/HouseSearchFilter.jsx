@@ -102,18 +102,21 @@ const HouseSearchFilter = ({ houses }) => {
               </select>
             </div>
           </div>
-          <div className="house-search-filter-container">
-            <label htmlFor="beds">House Beds</label>
-            <div className="select">
-              <select
-                name="beds"
-                id="beds"
-                value={beds}
-                onChange={handleChange}
-              >
-                {cushan}
-              </select>
+            <div className="house-search-filter-container">
+            <div className="beds-container">
+              <label htmlFor="beds">House Beds</label>
+              <div className="select">
+                <select
+                  name="beds"
+                  id="beds"
+                  value={beds}
+                  onChange={handleChange}
+                >
+                  {cushan}
+                </select>
+              </div>
             </div>
+
           </div>
           <div className="house-search-filter-container">
             <label htmlFor="baths">House Baths</label>

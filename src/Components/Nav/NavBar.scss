@@ -133,6 +133,7 @@ header {
     clip-path: circle(1400px at 90% -5%);
     -webkit-clip-path: circle(1400px at 90% -5%);
     pointer-events: all;
+    z-index: 2;
   }
 
   .nav-links li:nth-child(1) {

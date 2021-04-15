@@ -41,25 +41,26 @@ export default class Navbar extends Component {
               <Link to="/">realHousey</Link>
             </h2>
           </div>
+          {/* open open-burger  */}
 
           <div className="nav-container">
             <nav className={this.state.isOpen ? "nav-links open" : "nav-links"}>
-              <li className={this.state.isOpen ? "fade fade1" : "nav-li"}>
+              <li className={this.state.isOpen ? "fade fade1 nav-li" : "nav-li"}>
                 <Link className="link" to="/houses" onClick={this.handleToggle}>
                   Buy
                 </Link>
               </li>
-              <li className={this.state.isOpen ? "fade" : "nav-li"}>
+              <li className={this.state.isOpen ? "fade nav-li" : "nav-li"}>
                 <Link className="link" to="/sell" onClick={this.handleToggle}>
                   Sell
                 </Link>
               </li>
-              <li className={this.state.isOpen ? "fade" : "nav-li"}>
+              <li className={this.state.isOpen ? "fade nav-li" : "nav-li"}>
                 <Link className="link" to="/homeloans" onClick={this.handleToggle}>
                   Home Loans
                 </Link>
               </li>
-              <li className={this.state.isOpen ? "fade" : "nav-li"}>
+              <li className={this.state.isOpen ? "fade nav-li" : "nav-li"}>
                 <Link className="link" to="/agentfinder" onClick={this.handleToggle}>
                   Agents
                 </Link>

@@ -4,11 +4,6 @@ select {
   border: 0 !important;
 }
 
-// select:focus,
-// select:hover {
-//   color: #071738;
-// }
-
 .search-box {
   .search-box-inner {
     display: flex;
@@ -28,7 +23,6 @@ select {
   .house-search-filter-container {
     margin-right: 8rem;
     margin-top: 2rem;
-    // flex: 1;
     label {
       font-size: 2.7rem;
       color: #fff;

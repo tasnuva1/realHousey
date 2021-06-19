@@ -12,30 +12,38 @@ const TableCard = ({ year, tax, improvements, land, total }) => {
         </div>
         <div className="table-card-box-inner">
           <table>
-            <tr>
-              <th>Year</th>
-              <td>{year}</td>
-            </tr>
-            <tr>
-              <th>Tax</th>
-              <td>{tax}</td>
-            </tr>
-            <tr>
-              <th>Assessment</th>
-              <td></td>
-            </tr>
-            <tr>
-              <th>Land</th>
-              <td>{land}</td>
-            </tr>
-            <tr>
-              <th>Improvements</th>
-              <td>{improvements}</td>
-            </tr>
-            <tr>
-              <th>Total</th>
-              <td>{total}</td>
-            </tr>
+            <thead>
+              <tr>
+                <th scope="col">Items</th>
+                <th scope="col">Expenditure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Year</th>
+                <td>{year}</td>
+              </tr>
+              <tr>
+                <th>Tax</th>
+                <td>{tax}</td>
+              </tr>
+              <tr>
+                <th colSpan="2">Assessment</th>
+                {/* <td></td> */}
+              </tr>
+              <tr>
+                <th>Land</th>
+                <td>{land}</td>
+              </tr>
+              <tr>
+                <th>Improvements</th>
+                <td>{improvements}</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <td>{total}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
